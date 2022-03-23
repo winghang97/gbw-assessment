@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST" action="javascript:void(0)" onsubmit="myFunction();">
+      <fieldset>
+        <p>Use the below to check the date difference:</p>
+        <div class="">
+          <label class="mainDate" for="startDate">Start Date:</label>
+          <span>
+            <input
+              id="startDate"
+              type="text"
+              required
+              pattern="\d{1,2}/\d{1,2}/\d{4}"
+              placeholder="dd/mm/yyyy"
+              name="startdate"
+            />
+            <label>(dd/mm/yyyy)</label>
+          </span>
+          <p class="error" id="error1"></p>
+        </div>
+        <div class="">
+          <label class="mainDate" for="endDate">End Date:</label>
+          <span>
+            <input
+              id="endDate"
+              type="text"
+              required
+              pattern="\d{1,2}/\d{1,2}/\d{4}"
+              placeholder="dd/mm/yyyy"
+              name="endDate"
+            />
+            <label>(dd/mm/yyyy)</label>
+          </span>
+          <p class="error" id="error2"></p>
+        </div>
+        <input type="submit" />
+      </fieldset>
+    </form>
+    <p id="result"></p>
+    <script src="myScript.js"></script>
+  </body>
+</html>
